@@ -1,15 +1,12 @@
 {
-  "private": true,
-  "workspaces": [
-    "lesson*"
-  ],
   "name": "webpack-study",
   "version": "1.0.0",
-  "description": "",
+  "description": "a wevpack project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --config ./webpack.lirl.js"
+    "dev": "webpack --config ./webpack.lirl.js",
+    "start": "webpack --config ./webpack.config.js"
   },
   "author": "",
   "license": "ISC",
