@@ -1,11 +1,15 @@
-import pic from './assets/images/logo.png'
-// import './assets/css/index.css'
+console.log('hello, laohan');
 import './assets/css/index.less'
-console.log(pic);
-var img = new Image()
-img.src = pic
-var root = document.getElementById('app')
-root.append(img)
+
+// import './assets/css/index.css'
+
+// import pic from './assets/images/logo.png'
+// console.log(pic);
+// var img = new Image()
+// img.src = pic
+// var root = document.getElementById('app')
+// root.append(img)
+
 
 // 前端开发环境
 // 这个项目是什么类型的项目，目标环境是什么？
@@ -33,5 +37,9 @@ root.append(img)
 
 
 
-// 图片处理
+// 图片资源处理
+// js css html
 
+
+// 如何自己编写一个loader
+// 目标：彻底搞懂loader的原理，流程

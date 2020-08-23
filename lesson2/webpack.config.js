@@ -7,6 +7,9 @@ module.exports = {
     filename: "[name].js"
   },
   mode: "development",
+  resolveLoader: {
+    modules: ['./node_module', './myLoaders']
+  },
   module: {
     rules: [
       {
@@ -35,9 +38,25 @@ module.exports = {
         test: /.css$/,
         use: ['style-loader', 'css-loader']
       },
+      // {
+      //   test: /.less$/,
+      //   use: ['style-loader', 'css-loader', 'less-loader']
+      // },
       {
         test: /.less$/,
-        use: ['style-loader', 'css-loader', 'less-loader']
+        use: ['styleLoader', 'cssLoader', 'lessLoader']
+      },
+      {
+        test: /\.js$/,
+        use: [
+          'replaceLoader',
+          {
+            loader: 'replaceLoaderAsync',
+            options: {
+              name: '老韩'
+            }
+          }
+        ]
       }
     ]
   },
