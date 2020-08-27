@@ -18,3 +18,9 @@
 
   从entry入口找到所有的module构建成一个chunk，包装成一个bundle，
   所以一个entry，一个chunk，一个bundle
+
+  # 文件结构说明
+  lesson1 ----- webpack基础
+  lesson2 ----- 前端开发工程环境搭建-01 (loader)
+  lesson3 ----- 前端开发工程环境搭建-02 (plugin, HMR)
+  lesson4 ----- webpack性能优化

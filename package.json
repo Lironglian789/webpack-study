@@ -1,7 +1,7 @@
 {
   "private": true,
   "workspaces": [
-    "lesson2"
+    "lesson3"
   ],
   "name": "webpack-study",
   "version": "1.0.0",
