@@ -1,7 +1,6 @@
 const path = require('path')
 const htmlwebpackplugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
-const MiniCssExtractPllugin = require('mini-css-extract-plugin')
 const webpack = require('webpack')
 module.exports = {
   entry: './src/index.js',
@@ -16,6 +15,16 @@ module.exports = {
         test: /.less$/,
         use: ['style-loader', 'css-loader', 'postcss-loader', 'less-loader']
       },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"]
+          }
+        }
+      }
     ]
   },
   devtool: 'scheap-module-eval-source-map', //  开发环境配置
@@ -37,9 +46,9 @@ module.exports = {
     hotOnly:true, // css热模块替换 HMR不⽣效，浏览器也不⾃动刷新，就开启hotOnly
     port: 8081,
     proxy: {
-      "/api/loginVerification":{
-        target: " http://localhost:4000"
-      }
+      "/api":{
+        target: " http://localhost:9090"
+      } 
     }
   }
 }

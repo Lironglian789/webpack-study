@@ -1,7 +1,7 @@
 {
   "private": true,
   "workspaces": [
-    "lesson3"
+    "lesson5/mini-webpack"
   ],
   "name": "webpack-study",
   "version": "1.0.0",

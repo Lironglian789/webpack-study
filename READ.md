@@ -20,7 +20,8 @@
   所以一个entry，一个chunk，一个bundle
 
   # 文件结构说明
-  lesson1 ----- webpack基础
-  lesson2 ----- 前端开发工程环境搭建-01 (loader)
-  lesson3 ----- 前端开发工程环境搭建-02 (plugin, HMR)
-  lesson4 ----- webpack性能优化
+  lesson1 ----- webpack基础 （概念）
+  lesson2 ----- 前端开发工程环境搭建-01 (loader css 图片 字体文件处理)
+  lesson3 ----- 前端开发工程环境搭建-02 (plugins, HMR, 多页面通用打包)
+  lesson4 ----- webpack性能优化 （babel js处理）
+  lesson5 ----- webpack 打包bundle原理分析与实现

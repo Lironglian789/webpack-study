@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 
+const mockData = require('./mock.json')
+// console.log(mockData)
 
 app.get('/api/info', (req, res) => {
   res.json({
@@ -10,4 +12,11 @@ app.get('/api/info', (req, res) => {
   })
 })
 
-app.listen('9090')
+app.post('/mock/areaList', (req, res) => {
+  res.end(JSON.stringify(mockData))
+})
+
+
+
+
+app.listen('4000')
